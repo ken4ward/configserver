@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: productservice
+  data:
+    cassandra:
+      keyspace-name: productdatabase
+      port: 9042
+      contact-points:
+        - host1
+        - host2
+      username: cassandra
+      password: cassandra
+      schema-action: CREATE_IF_NOT_EXISTS
+      local-datacenter: datacenter1
